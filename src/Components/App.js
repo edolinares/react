@@ -12,7 +12,7 @@ import { GeneralProvider } from "../contexts/GeneralContext";
 export const App = () => {
   return (
     <>
-      <BrowserRouter basename="/home">
+      <BrowserRouter basename="/">
         <GeneralProvider>
           <CartProvider>
             <NavBar />
