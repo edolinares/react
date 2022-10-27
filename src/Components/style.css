@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Roboto:wght@300;400;700&display=swap");
+html {
+  font-size: 62.5%;
+  --clearcolor: #ffffff;
+  --ligthcolor: #fafbfc;
+  --semilightcolor: #f5f6f6;
+  --midcolor: #585b56;
+  --darkcolor: #6e9887;
+  --accentcolor: #ff595e;
+  --wrapperheight: 420px;
+  --wrapperwidth: 700px;
+}
+html * {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html h1 {
+  color: var(--clearcolor);
+  text-align: center;
+  font-size: 4em;
+  height: 100%;
+}
+html h2 {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  margin: 20px 20px;
+}
+html h3 {
+  text-align: left;
+  font-size: 2em;
+  margin: 0 10px 20px 20px;
+}
+html h4 {
+  text-align: left;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+html p {
+  font-size: 1.4em;
+  color: var(--midcolor);
+  font-weight: 300;
+  margin: 20px;
+}
+html i {
+  text-align: center;
+  font-size: 1em;
+  margin: 10px;
+  color: var(--accentcolor);
+}
+html span {
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+html button {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: var(--darkcolor);
+  cursor: pointer;
+  outline: none;
+  bottom: 5px;
+  padding: 0 10px;
+}
+html button:hover {
+  background-color: var(--accentcolor);
+}
+html select,
+html option,
+html input {
+  margin: 10px;
+  width: 200px;
+  color: var(--darkcolor);
+  font-size: 1.2em;
+  background: var(--ligthcolor);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--semilightcolor);
+  text-align: center;
+}
+html input:hover {
+  background-color: var(--darkcolor);
+  color: var(--ligthcolor);
+}
+html table {
+  margin: 20px 0;
+  width: 100%;
+}
+html th,
+html td {
+  border: 0px solid var(--semilightcolor);
+  padding: 5px;
+  width: 20px;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--semilightcolor);
+  font-size: 1.2em;
+}
+html tr:hover {
+  background-color: var(--semilightcolor);
+  color: var(--clearcolor);
+}
+html .svg {
+  font-size: 25px;
+  color: var(--accentcolor);
+}
+html .svg :hover {
+  color: var(--darkcolor);
+}
+html img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* CUSTOMS */
+.Containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+.Containers .Card {
+  width: 25rem;
+  height: 40rem;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+}
+.formbox .data {
+  width: 95%;
+}
+
+.wrapper {
+  height: var(--wrapperheight);
+  width: var(--wrapperwidth);
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.wrapper .product-img {
+  float: left;
+  height: 100%;
+}
+.wrapper .product-img img {
+  border-radius: 7px 0 0 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .product-info {
+  float: left;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+.wrapper .product-info .product-text {
+  height: 75%;
+}
+
+/* SPECIFICS */
+.product-price-btn {
+  display: flex;
+  flex-direction: column;
+}
+.product-price-btn span {
+  text-align: center;
+}
+
+.itemCounter {
+  display: flex;
+}
+.itemCounter p {
+  font-weight: 900;
+  margin: 0;
+}
+.itemCounter button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.itemCountContainer {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: center;
+}
+
+.cartContainer {
+  margin: auto;
+  width: 80%;
+}
+
+.footerOrderSuccess {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.footerOrderSuccess .myOrder {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+.footerOrderSuccess button {
+  width: 250px;
+}
+
+.cartsvg {
+  color: var(--accentcolor);
+  font-size: 250px;
+}/*# sourceMappingURL=style.css.map */
