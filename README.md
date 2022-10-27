@@ -1,10 +1,11 @@
 # Be welcome to this React project 
 # Trekking ecomerce site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My first React project, with intention to show and document all the process. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Develop by @edolinares https://www.linkedin.com/in/edolinares/
 
 ## Available Scripts
- - CRA
  - ReactJS
  - Boostrap
  - Firebase
@@ -14,12 +15,14 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open https://edolinares.github.io/react/home to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
+## Demo
 ### `npm test`
+
+![](https://firebasestorage.googleapis.com/v0/b/reactapp-9b014.appspot.com/o/React-FinalProject.gif?alt=media&token=418fa527-313e-41d1-be27-1be9f65ac587)
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -33,6 +36,15 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Folder Structure 
+
+ - `/components`
+ - `/contexts`
+ - `/utils`
+
+#### Style
+
+All the styles were custom in order to practice SCSS . 
 
 ### `npm run eject`
 
