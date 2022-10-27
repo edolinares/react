@@ -14,6 +14,7 @@ const ItemDetail = ({ product }) => {
     addItem(product, value);
   };
 
+  //Componente que muestra el detalle de cada uno de los productos
   return (
     <div className="wrapper" >
       <div className="product-img">

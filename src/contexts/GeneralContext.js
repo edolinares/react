@@ -1,16 +1,11 @@
 import React, { useState, createContext } from "react";
 
-const buyer = {
-  name: "Fran",
-  phone: "6151552111",
-  email: "edolinares@gmail.com",
-}
 const GeneralContext = createContext()
-
-
 export function GeneralProvider({ children }) {
+  const [buyer, setBuyer] = useState([]);
+  //Se creo un segundo contexto, aunque pudo haber sido utilizado el ya existente para mejorar el entendimiento y construccion. 
   return (
-    <GeneralContext.Provider value={{item: buyer}}>
+    <GeneralContext.Provider value={{buyer, setBuyer}}>
       {children}
     </GeneralContext.Provider>
   )

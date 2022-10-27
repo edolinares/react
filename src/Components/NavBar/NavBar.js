@@ -1,10 +1,9 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { CartWidget } from "../Cart/CartWidget";
 
-
 export const NavBar = () => {
+  // Componente que forma la barra de navegacion superior. 
   return (
     <Navbar bg="light" variant="light">
       <Container>

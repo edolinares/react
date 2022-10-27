@@ -23,7 +23,6 @@ export const getAllProducts = () => {
     })
     .catch((error) => console.warn(error));
 };
-
 export const getProduct = (id) => {
   const database = getFirestore();
   const itemReference = doc(database, "items", id);
@@ -37,7 +36,6 @@ export const getProduct = (id) => {
     }
   });
 };
-
 export const getProductsByCategory = (categoryId) => {
   const database = getFirestore();
   const collectionReference = collection(database, "items");
@@ -47,10 +45,10 @@ export const getProductsByCategory = (categoryId) => {
     where("category", "==", categoryId)
   );
 
+  // Proceso para la descarga de los datos de la BD Firebase
   return getDocs(collectionQuery)
     .then((snapshot) => {
       if (snapshot.size === 0) return [];
-
       const list = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),

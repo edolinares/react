@@ -2,21 +2,18 @@ import React, { useEffect, useState } from "react";
 
 const ItemCount = ({ min, max, onAdd }) => {
   const [count, setCount] = useState(parseInt(min));
-
   const handleSubtract = () => {
     setCount(count - 1);
   };
-
   const handleAdd = () => {
     setCount(count + 1);
   };
-
   const handleClick = () => onAdd(count);
-
   useEffect(() => {
     setCount(parseInt(min));
   }, [min]);
 
+  // Componente para agregar mas elementos del producto hijo de ItemDetail
   return (
     <div className="itemCountContainer">
       <div className="itemCounter">

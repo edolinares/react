@@ -1,9 +1,14 @@
-# Getting Started with Create React App
+# Be welcome to this React project 
+# Trekking ecomerce site
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
+ - CRA
+ - ReactJS
+ - Boostrap
+ - Firebase
+ 
 In the project directory, you can run:
 
 ### `npm start`

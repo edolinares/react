@@ -4,23 +4,22 @@ import { FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { createOrder } from "../../Utils/Orders";
 import { OrderModal } from "../OrderModal/OrderModal";
-
+import GeneralContext from "../../contexts/GeneralContext";
 
 export const Cart = () => {
+  const { buyer, setBuyer } = useContext(GeneralContext);
   const { cart, total, removeItem, clear } = useContext(CartContext);
- // const [user, setUser] = useState();
   const [showModal, setShowModal] = useState(false);
   const [orderId, setOrderId] = useState();
-
   const handleRemove = (itemId) => {
     removeItem(itemId);
   };
   const handleOpen = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
-
+  // al hacer click en "comprar" se agrupan los datos ingresados y se solicita crea la orden
   const handleBuy = async () => {
     const newOrder = {
-      buyer: 1,
+      buyer: buyer,
       items: cart,
       total,
     };
@@ -65,6 +64,7 @@ export const Cart = () => {
           </button>
         </div>
       )}
+      {/* Si no hay elementos en el carrito mostramos avisamos */}
       {!showTable && (
         <>
           <h3 className="cartEmpty">Carrito de compra vacio</h3>
@@ -74,7 +74,6 @@ export const Cart = () => {
         </>
       )}
       <OrderModal
-
         showModal={showModal}
         onClose={handleClose}
         onBuy={handleBuy}
